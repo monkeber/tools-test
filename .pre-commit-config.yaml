@@ -1,0 +1,10 @@
+repos:
+    - repo: local
+      hooks:
+        - id: format_code
+          name: format_code
+          entry: python3 hooks/format_code.py
+          language: system
+          always_run: true
+          pass_filenames: true
+          types: ['c++']
