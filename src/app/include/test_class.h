@@ -4,4 +4,7 @@ class TestClass {
 
  public:
   char m_charMember;
+
+ private:
+  int m_secondMember;
 };
