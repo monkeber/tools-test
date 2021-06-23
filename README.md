@@ -19,4 +19,4 @@ For pre commit git hooks I use a tool written in Python called [pre-commit](http
         pre-commit 2.13.0
         ```
     - You may need to install it globally if after installation from pip it doesn't get recognized by your shell.
-1. Run `pre-commit install` and you are done with the hooks! They will run automatically before each commit.
+1. Run `pre-commit install` && `pre-commit install -t commit-msg` and you are done with the hooks! They will run automatically before each commit.

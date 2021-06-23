@@ -10,7 +10,6 @@ for file in file_list:
     command = ["clang-format", "-style=chromium", "-i", file]
     return_code = call(command)
     if return_code != 0:
-        print("There is some issue with clang-format\n")
-        sys.exit(1)
+        raise Exception("There is some issue with clang-format")
     command = ["git", "add", file]
     call(command)
