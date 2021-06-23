@@ -8,6 +8,9 @@ file_list = sys.argv[1:]
 
 for file in file_list:
     command = ["clang-format", "-style=chromium", "-i", file]
-    call(command)
+    return_code = call(command)
+    if return_code != 0:
+        print("There is some issue with clang-format\n")
+        sys.exit(1)
     command = ["git", "add", file]
     call(command)
