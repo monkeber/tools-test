@@ -20,3 +20,7 @@ For pre commit git hooks I use a tool written in Python called [pre-commit](http
         ```
     - You may need to install it globally if after installation from pip it doesn't get recognized by your shell.
 1. Run `pre-commit install` && `pre-commit install -t commit-msg` and you are done with the hooks! They will run automatically before each commit.
+
+# Commit Style
+
+I incorporated [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) with imperative English as the style for commits.
