@@ -19,5 +19,12 @@ add_executable(${PROJECT_NAME}
     ${${PROJECT_NAME}_SOURCES}
 )
 
+target_include_directories(${PROJECT_NAME}
+    PUBLIC
+        include
+    PRIVATE
+        src
+)
+
 # Folder property is assigned to the target after its creation, in our case it is the executable.
 #set_target_properties(${PROJECT_NAME} PROPERTIES FOLDER executables)
