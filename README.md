@@ -6,6 +6,11 @@ This project was created in order to test different tools such as git hooks, bui
 
 # Setting Up
 
+## Python Scripts
+
+Python scripts for building require such packages to be installed with pip:
+- termcolor
+
 ## Git Hooks
 
 For pre commit git hooks I use a tool written in Python called [pre-commit](https://pre-commit.com/). Git hooks are being configured once per cloned repo by a developer and then could be updated automatically without involving every dev on a team.
@@ -24,3 +29,12 @@ For pre commit git hooks I use a tool written in Python called [pre-commit](http
 # Commit Style
 
 I incorporated [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) with imperative English as the style for commits.
+
+# Build
+
+For complete build you can use python scripts from `scripts` directory.
+
+For generating files for Visual Studio you can run this command from the build directory:
+```
+cmake .. -G"Visual Studio 16 2019" -T "v142" -A x64
+```
